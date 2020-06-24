@@ -1,3 +1,3 @@
 # Contato
 
-# e-mail: edmar.bellorini@gmail.com
+- e-mail: edmar.bellorini@gmail.com
