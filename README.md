@@ -1,6 +1,5 @@
-# Unioeste
 
-Colegiado do curso de Ciência da Computação - Cascavel
+Unioeste - Cascavel - Colegiado do curso de Bacharelado em Ciência da Computação
 
 ## Linguagens de Montagem
 
@@ -9,10 +8,12 @@ Colegiado do curso de Ciência da Computação - Cascavel
 **Ementa**: Estudo de linguagem de montagem e desenvolvimento de software básico. Estudo de conjuntos de instruções e modos de
 endereçamento. Implementação de construções de alto nível em linguagem de máquina.
 
-###### Este repositório
 
-Conterá todas as aulas da disciplina:
-- Apresentações em .pdf
-- Arquivos de código-fonte exemplos e, se possível, exercícios resolvidos
+Este repositório conterá todas as aulas da disciplina:
+- Apresentações em .pdf;
+- Arquivos de código-fonte exemplos e, se possível, exercícios resolvidos;
+- e outros arquivos relevante para a disciplina.
+
+Outras informaçõe relevantes serão adicionadas em um futuro próximo.
 
 
