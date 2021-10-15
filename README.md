@@ -20,7 +20,7 @@ Outras informaçõe relevantes serão adicionadas em um futuro próximo.
 
 **TL;DR**: no terminal Linux faça:  
   `sudo apt update` (pressione enter e insira sua senha de super usuário)  
-  `sudo apt install nasm binutils build-essential` (pressione enter)  
+  `sudo apt install nasm binutils build-essential git-all` (pressione enter)  
   
 
 - Sistema Operacional Linux 
@@ -44,18 +44,38 @@ Outras informaçõe relevantes serão adicionadas em um futuro próximo.
     `sudo apt install build-essential`
 
 ### FAQ
-  > *Mas eu nunca utilizei terminal Linux!*  
+  > *"Mas eu nunca utilizei terminal Linux! Como faz?"*  
   
   _Aluno de computação que nunca utilizou terminal Linux._  
   **Possível solução:** [Curso gratuito introdutório de terminal Linux criado por Diego Mariano.](https://www.udemy.com/course/terminal-de-comandos-linux/) 
 
-  > *Eu nem tenho Linux!*  
+  > *"Ah não, terei que instalar o Linux?"*  
   
   _Aluno de computação que não usa Linux ou compatíveis._  
   **Possíveis soluções:**
   1. Bare-Metal Dual-Boot Windows + Linux (modo hardcore): [Como fazer dual-boot com Ubuntu e Windows 10 em seu notebook](https://blog.matheus.io/pt/tech/como-fazer-dual-boot-ubuntu-windows-10/) de Matheus Pratta.  
   2. Virtualização Linux Visitante + Windows Hospedeiro (modo mamão com açucar): [Como instalar o Ubuntu Linux no Windows 10 com o VirtualBox](https://fiodevida.com/como-instalar-o-ubuntu-linux-no-windows-10-com-o-virtualbox/)   
   3. WSL2 do Windows 10 (modo mamão com açucar, porém com pitada de sal): to-do: não encontrei um bom tutorial para esta solução.  
+  
+  > *"Ok, Linux compatível instalado, mas o que faço com esse tal de git?"*  
+
+  _Aluno de computação que não conheçe o git._  
+  **Possíveis soluções:**  
+  1. Básico e feio: use o botão **CODE** (em verde) no canto superior direito e faça o Download da pasta. Problema: terá que realizar um novo Download e substituir os arquivos antigos toda vez que alguma alteração acontecer.  
+  2. Intermediário e bonito: instale o git e clone o repositório:  
+     - Instale o git, no terminal Linux digite:  
+     `sudo apt install git-all`  
+     - Em seu computador local, crie um diretório e clone o diretório deste repositório com o comando:   
+     `git clone https://github.com/bellorini/Unioeste-LinguagensDeMontagem.git` 
+     - Muito bem, agora, toda vez que uma aula iniciar, entre no diretório local em seu computador e atualize o repositório com o comando:   
+     `git pull origin master`  
+        - Parabéns, seu diretório será atualizado automagicamente toda vez que executar este comando.  
+  
+  > *"Que legal, esse tal de git parece bacana! Onde posso saber mais sobre ele?"*  
+  
+  _Aluno de computação querendo ter um diferencial no seu currículo._  
+  **Possível solução:** [Documentação oficial do github](https://docs.github.com/pt/get-started).  
+  
   
 ### Principais Referências:
 - to-do
