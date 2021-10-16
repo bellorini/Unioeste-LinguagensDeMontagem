@@ -77,5 +77,21 @@ Outras informaçõe relevantes serão adicionadas em um futuro próximo.
   **Possível solução:** [Documentação oficial do github](https://docs.github.com/pt/get-started).  
   
   
-### Principais Referências:
-- to-do
+### Principais Referências: (em construção)  
+Livros, documentos e outros materiais que tem forte contribuição com a produção deste material.  
+- [NASM - The Netwide Assembler](https://www.nasm.us/doc/)  
+- [Intel® 64 and IA-32 ArchitecturesSoftware Developer’s Manual - all volumes](https://software.intel.com/content/www/us/en/develop/download/intel-64-and-ia-32-architectures-sdm-combined-volumes-1-2a-2b-2c-2d-3a-3b-3c-3d-and-4.html)  
+
+#### Referências Secundárias: (em construção)
+Artigos, livros ou outros documentos que de alguma forma contribuíram com algum ponto específico deste material.
+- [Bartlett, Jonathan. Programming from the Ground Up. Rev 1.0. 2003](http://savannah.nongnu.org/projects/pgubook).  
+(_Sintaxe AT&T, registradores, memória, funções._)  
+- Hyde, Randall - The Art of Assembly Language by Randall Hyde. 2nd Edition.  
+(_Sintaxe AT&T, representação de dados, acesso à memória, aritmética legada._)  
+- Duntemann, Jeff. Assembly Language Step-by-Step Programming with Linux. 3rd Edition.  
+(_Endianness, Flags, CMP, Jcc._)  
+- Streib, James T. . Guide to Assembly Language A Concise Introduction. 1st Edition. 2011.  
+(_Registradores, movimentação de dados, aritmética legada, operações lógicas._)
+- Cavanagh, Joseph. X86 Assembly Language and C Fundamentals. 2013.  
+(_Sistema de numeração, modos de endereçamento, pilha, macros, ponto-flutuante (FPUx87, não mais utilizada neste ano, porém, mantido para os curiosos)._)
+
