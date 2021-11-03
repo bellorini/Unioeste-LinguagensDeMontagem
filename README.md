@@ -55,7 +55,7 @@ Outras informaçõe relevantes serão adicionadas em um futuro próximo.
   **Possíveis soluções:**
   1. Bare-Metal Dual-Boot Windows + Linux (modo hardcore): [Como fazer dual-boot com Ubuntu e Windows 10 em seu notebook](https://blog.matheus.io/pt/tech/como-fazer-dual-boot-ubuntu-windows-10/) de Matheus Pratta.  
   2. Virtualização Linux Visitante + Windows Hospedeiro (modo mamão com açucar): [Como instalar o Ubuntu Linux no Windows 10 com o VirtualBox](https://fiodevida.com/como-instalar-o-ubuntu-linux-no-windows-10-com-o-virtualbox/)   
-  3. WSL2 do Windows 10 (modo mamão com açucar, porém com pitada de sal): to-do: não encontrei um bom tutorial para esta solução.  
+  3. WSL2 do Windows 10 (modo mamão com açucar, porém com pitada de sal): [Install Kali Linux – WSL 2 KEX GUI hacking setup](https://www.youtube.com/watch?v=_cXmx2qwWts) (sugestão do Vinicius Muller).  
   
   > *"Ok, Linux compatível instalado, mas o que faço com esse tal de git?"*  
 
