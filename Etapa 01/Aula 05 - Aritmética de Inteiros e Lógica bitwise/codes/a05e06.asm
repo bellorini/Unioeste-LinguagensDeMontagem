@@ -1,6 +1,6 @@
 ; Aula 05 - Aritmética e Lógica
 ; arquivo: a05e06.asm
-; objetivo: Deslocamento Lógico SHR e SHL
+; objetivo: Multiplicação e Divisão de inteiros
 ; nasm -f elf64 a05e06.asm ; ld a05e06.o -o a05e06.x
 
 section .data
