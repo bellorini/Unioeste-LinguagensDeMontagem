@@ -1,7 +1,9 @@
 ; Aula 01 - Introdução
 ; hello.asm
 ; Meu primeiro assembly!
-; nasm -f elf64 hello.asm ; ld hello.o -o hello.x
+; montar: nasm -f elf64 hello.asm 
+; lingar: ld hello.o -o hello.x
+; sugestão: nasm -f elf64 hello.asm && ld hello.o -o hello.x
 
 section .data
    strOla :  db "Ola", 10
