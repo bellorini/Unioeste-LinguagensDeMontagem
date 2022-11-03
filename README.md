@@ -68,7 +68,7 @@ Outras informaçõe relevantes serão adicionadas em um futuro próximo.
      - Em seu computador local, crie um diretório e clone o diretório deste repositório com o comando:   
      `git clone https://github.com/bellorini/Unioeste-LinguagensDeMontagem.git` 
      - Muito bem, agora, toda vez que uma aula iniciar, entre no diretório local em seu computador e atualize o repositório com o comando:   
-     `git pull origin master`  
+     `git pull origin main`  
         - Parabéns, seu diretório será atualizado automagicamente toda vez que executar este comando.  
   
   > *"Que legal, esse tal de git parece bacana! Onde posso saber mais sobre ele?"*  
