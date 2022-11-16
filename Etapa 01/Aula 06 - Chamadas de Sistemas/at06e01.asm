@@ -1,3 +1,8 @@
+; Aula 06 - Chamada de Sistemas
+; arquivo: at06e01.asm
+; objetivo: aplicação sem sentido!
+; nasm -f elf64 at06e01.asm ; ld at06e01.o -o at06e01.x
+
 section .data
    saida:   db "this isn't working!",10
    saidaL: equ $ - saida
