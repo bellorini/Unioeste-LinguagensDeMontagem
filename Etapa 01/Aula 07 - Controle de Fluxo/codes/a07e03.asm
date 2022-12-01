@@ -66,7 +66,7 @@ lIguais:
    lea rsi, [iguais]
    mov edx, iTamanho
    syscall   
-   jmp fim  ; se acessou esta perna, não pode continuar
+   jmp fim  ; se acessou este bloco, não pode continuar
 
 lMenor:
    mov rax, 1
@@ -74,7 +74,7 @@ lMenor:
    lea rsi, [menor]
    mov edx, mTamanho
    syscall
-   jmp fim  ; se acessou esta perna, não pode continuar
+   jmp fim  ; se acessou este bloco, não pode continuar
 
 lMaior:
    mov rax, 1

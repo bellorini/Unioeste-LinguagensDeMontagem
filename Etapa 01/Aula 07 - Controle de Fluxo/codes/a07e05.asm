@@ -5,9 +5,6 @@
 ; nasm -f elf64 a07e05.asm ; ld a07e05.o -o a07e05.x
 
 section .data
-    strOla : db "%d * %d = %d", 10, 0
-    strOlaL: equ $ - strOla
-
     ; variaveis inteiras
     multiplicando : dd 5;
     multiplicador : dd 13;

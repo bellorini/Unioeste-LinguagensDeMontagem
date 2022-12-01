@@ -77,8 +77,8 @@ entradaFor:
         inc ecx                 ; ecx++
         jmp preBloco
 
-
 saidaFor:
+
 resposta:
     mov rax, 1  ; WRITE
     mov rdi, 1

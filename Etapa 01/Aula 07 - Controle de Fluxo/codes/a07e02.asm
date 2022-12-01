@@ -4,8 +4,8 @@
 ; nasm -f elf64 a07e02.asm ; ld a07e02.o -o a07e02.x
 
 section .data
-    ; usado para transformar em caractere
-    passo : db 0, 10
+    ; usado para converter índice r8 em caractere
+    passo : db 0, 10 ; chr(r8) + "\n"
 
 section .text
     global _start
@@ -15,16 +15,16 @@ _start:
     mov r8, 5 ; no. de execucoes
 repete:
     ; codigo para imprimir o passo
-        ; captura passo e transforma em char
-        mov [passo], r8b
-        add byte [passo], 0x30
+    ; captura passo e transforma em char
+    mov [passo], r8b
+    add byte [passo], 0x30
 
-        ; chamada WRITE
-        mov rax, 1
-        mov rdi, 1
-        lea rsi, [passo]
-        mov rdx, 2 ; char + quebra de linha
-        syscall
+    ; chamada WRITE
+    mov rax, 1
+    mov rdi, 1
+    lea rsi, [passo]
+    mov rdx, 2 ; char + quebra de linha
+    syscall
 
     ; decrementar contador r8
     dec r8

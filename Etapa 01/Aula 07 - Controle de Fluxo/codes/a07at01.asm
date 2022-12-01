@@ -1,6 +1,7 @@
 ; Aula 07 - Controle de Fluxo de Execucao
 ; arquivo: a07at01.asm
-; Atividade
+; Atividade: Parrot Code whitout "unwanted feature"
+;   dica: onde estão os caracteres que não foram lidos ainda?
 ; nasm -f elf64 a07at01.asm ; ld a07at01.o -o a07at01.x
 
 %define maxChars 10

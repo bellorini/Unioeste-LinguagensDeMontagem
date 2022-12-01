@@ -11,7 +11,7 @@ section .text
     global _start
 
 _start:
-    ; play dead
+    ; play dead!
     jmp _start      ; label é o destino
    
     ;mov rax, _start

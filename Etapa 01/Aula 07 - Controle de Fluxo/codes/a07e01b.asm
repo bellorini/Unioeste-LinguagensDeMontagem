@@ -15,7 +15,8 @@ section .text
     global _start
 
 _start:
-    ;jmp fim      ; não executa WRITE
+    ; play dead!
+    ;jmp fim      ; não executa WRITE se ativo!
    
     mov rax, 1  ; WRITE
     mov rdi, 1
