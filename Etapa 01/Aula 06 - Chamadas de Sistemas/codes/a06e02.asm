@@ -5,22 +5,25 @@
 ;           cria arquivo caso inexistente
 ; nasm -f elf64 a06e02.asm ; ld a06e02.o -o a06e02.x
 
-%define maxChars 20 ; no. máximo de caracteres a serem lidos
+%define maxChars 255 ; no. máximo de caracteres a serem lidos
 
 ; valores em octal
-%define readOnly  0o ; flag open()
-%define writeOnly 1o ; flag open()
-%define readwrite 2o ; flag open()
-%define openrw  102o ; flag open()
-%define userWR 644o  ; Read+Write+Execute
-%define append 2101o ; flag open() criar/escrever no final
+%define readOnly  0o      ; flag open() - somente leitura
+%define writeOnly 1o      ; flag open() - somente escrita
+%define readwrite 2o      ; flag open() - leitura e escrita
+%define createopenr  100o ; flag open() - criar + leitura
+%define createopenw  101o ; flag open() - criar + escrita
+%define createopenrw 102o ; flag open() - criar + leitura e escrita
+%define append 2101o      ; flag open() - criar + leitura e escrita no final
+%define userWR 644o       ; Read+Write+Execute: -rw-r--r--
 
 section .data
     fileName: db "a06e02.txt", 0 ; null-terminated string!
 
 section .bss
-    texto: resb 25
-    fileHandle: resd 1
+    texto      : resb maxChars
+    textoL     : resd 1
+    fileHandle : resd 1
 
 section .text
     global _start
@@ -29,7 +32,7 @@ _start:
     ; int open(const char *pathname, int flags, mode_t mode);
     mov rax, 2          ; open file
     lea rdi, [fileName] ; *pathname
-    mov esi, openrw     ; flags
+    mov esi, createopenr; flags
     mov edx, userWR     ; mode
     syscall
 
@@ -42,11 +45,13 @@ leitura:
     mov edx, maxChars     ; count
     syscall
 
+    mov [textoL], eax     ; núm de caracteres efetivamente lidos
+
 escrita:
     mov rax, 1   ; escrita em terminal
     mov rdi, 1
     lea rsi, [texto]
-    mov edx, maxChars
+    mov edx, [textoL]
     syscall
 
 fecha:

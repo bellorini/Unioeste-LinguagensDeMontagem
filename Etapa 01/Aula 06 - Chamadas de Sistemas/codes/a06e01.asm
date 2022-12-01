@@ -14,7 +14,7 @@ section .data
     strByeL: equ $ - strBye 
 
     strLF  : db 10 ; quebra de linha ASCII!
-    strLFL : db 1
+    strLFL : dd 1
 
 section .bss
     strLida  : resb maxChars
@@ -25,7 +25,7 @@ section .text
 
 _start:
     ; ssize_t write(int fd , const void *buf, size_t count);
-    ; eax     write(int edi, const void *rsi, size_t edx  );
+    ; eax     write(int ebx, const void *ecx, size_t edx  );
     mov rax, 1
     mov rdi, 1  ; std_file
     lea rsi, [strOla]
@@ -36,7 +36,7 @@ leitura:
     mov dword [strLidaL], maxChars ; %define é constantes!
 
     ; ssize_t read(int fd , const void *buf, size_t count);
-    ; eax     read(int edi, const void *rsi, size_t edx  );
+    ; eax     read(int ebx, const void *ecx, size_t edx  );
     mov rax, 0  ; READ
     mov rdi, 1
     lea rsi, [strLida]
@@ -65,8 +65,8 @@ resposta:
     syscall
 
 fim:
-    ; void _exit(int status );
-    ; void _exit(int edi/rdi);
+    ; void _exit(int status);
+    ; void _exit(int ebx   );
     mov rax, 60
     mov rdi, 0
     syscall
