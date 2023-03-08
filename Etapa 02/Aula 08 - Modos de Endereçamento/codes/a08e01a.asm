@@ -1,4 +1,4 @@
-; Aula 08 - Demonstração de Instrução MOV
+; Aula 08 - Demonstração de Instrução MOV 
 ; arquivo: a08e01a.asm
 ; nasm -f elf64 a08e01a.asm ; ld a08e01a.o -o a08e01a.x
 

@@ -1,7 +1,7 @@
 ; Aula 08 - Demonstração dos modos de endereçamento
 ; arquivo: a08e03.asm
 ; objetivo: percorrer vetores de char e inteiros
-; nasm -f elf64 a08e03.asm ; ld a08e03.o -o a08e03.x
+; nasm -f elf64 a08e03.asm ; ld a08e03.o -o a08e03.x 
 
 section .data
     v1 : db 'a', 'b', 'c', 'd', 'e'        ; vetor de char (char v1[5];)

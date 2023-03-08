@@ -1,4 +1,4 @@
-; Aula 08 - Demonstração de Instrução ADD
+; Aula 08 - Demonstração de Instrução ADD 
 ; arquivo: a08e01b.asm
 ; nasm -f elf64 a08e01b.asm ; ld a08e01b.o -o a08e01b.x
 

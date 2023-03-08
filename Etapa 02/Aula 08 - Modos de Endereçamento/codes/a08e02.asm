@@ -81,7 +81,7 @@ PorDeslocamentoIndexado2P:
     lea r8, [var]
 PorDeslocamentoIndexado3:
     mov eax, [r8 + rcx * 4]
-PorDeslocamentoIndexado4:
+PorDeslocamentoIndexado4: 
 
 ;----------------------
     xor eax, eax
