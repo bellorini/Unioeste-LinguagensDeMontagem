@@ -58,7 +58,7 @@ _start:
     ; parâmetro rdx para a chamada write
     ; pop rdx             
 
-    ; para causar bug, mude pop rdx para mov rdx, maxChars
+    ; para causar bug: pop rdx alterado para mov rdx, maxChars
     mov rdx, maxChars
 
     syscall 
