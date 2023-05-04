@@ -36,7 +36,7 @@ main:
     mov rdi, scstr1
     lea rsi, [scfP1]   ; x1 ; Load Efective Address!!!
     lea rdx, [scfP1+4] ; y1
-    lea rcx, [scfP1+8] ; y1
+    lea rcx, [scfP1+8] ; z1
     call scanf
   
     ; eax = printf("Entre com Ponto_%d (int) no formato x y z: ", 2);
@@ -50,7 +50,7 @@ main:
     mov rdi, scstr1    ; mesma entrada
     lea rsi, [scfP2]   ; x2 ; Load Efective Address!!!
     lea rdx, [scfP2+4] ; y2
-    lea rcx, [scfP2+8] ; y2
+    lea rcx, [scfP2+8] ; z2
     call scanf
 
     ; conversão para double já em registradores

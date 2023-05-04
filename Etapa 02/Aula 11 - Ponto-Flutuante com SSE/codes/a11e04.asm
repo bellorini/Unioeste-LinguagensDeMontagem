@@ -10,7 +10,7 @@ extern scanf
 section .data
     pfstr1 : db "Entre dois floats (x.xx y.yy): ", 0
     scstr1 : db "%f %f", 0
-    pfstr2 : db "Maior float é: %f", 10, 0
+    ;pfstr2 : db "Maior float é: %f", 10, 0
 
     pfstrMaior  : db "%f é maior do que %f", 10 ,0
     pfstrMenor  : db "%f é menor do que %f", 10 ,0

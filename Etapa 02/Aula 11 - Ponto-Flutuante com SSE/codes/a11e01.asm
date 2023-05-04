@@ -27,7 +27,7 @@ section .text
 
 main:
     ; stack-frame
-    push rbp
+    push rbp            ; com bonus de alinhamento da pilha em 16 bytes
     mov rbp, rsp
 
     ; eax = printf("Digite um Inteiro: ");
