@@ -84,6 +84,27 @@ gdb -x arquivo_com_comandos exec.x
 
 Podemos montar um roteiro de commandos para o gdb executar com nosso programa, definir breakpoints, iniciar a execução, exibir informações da memória ou registradores e exibir mensagens na saida (com echo).
 
+> Exemplo:
+
+
+Criar arquivo de depuração chamado `depurar.gdb`, com os seguintes comandos:
+- criar `breakepoint` em label `fim`
+- executar passando arquivo de entrada chamado `input.in`
+- mostrar conteúdo de registrador `eax` como um inteiro sinalizado
+- mostrar conteúdo de memória `resultado` como um inteiro sinalizado
+
+```sh
+b fim
+r < input.in
+p /d $eax
+x /d &resultado
+```
+
+depois, basta entrar no `gdb` com a seguinte linha de comando no terminal:
+```ssh
+gdb <nomeExecutavel> -x depurar.gdb
+```
+
 ### Mais recursos
 
 * man-pages: `man gdb`
