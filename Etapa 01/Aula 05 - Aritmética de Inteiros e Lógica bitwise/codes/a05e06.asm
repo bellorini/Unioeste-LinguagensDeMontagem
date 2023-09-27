@@ -4,13 +4,13 @@
 ; nasm -f elf64 a05e06.asm ; ld a05e06.o -o a05e06.x
 
 section .data
-    multiplicando1 : dq  50 
-    multiplicando2 : dq -50
-    multiplicador1 : dq   3
+    multiplicando1 : dd  50 
+    multiplicando2 : dd -50
+    multiplicador1 : dd   3
 
-    dividendo1     : dq  100
-    dividendo2     : dq -100
-    divisor1       : dq  25
+    dividendo1     : dd  100
+    dividendo2     : dd -100
+    divisor1       : dd  25
 
 section .text
     global _start
