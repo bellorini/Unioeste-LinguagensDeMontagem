@@ -7,6 +7,7 @@ section .text
     global _start
 
 _start:
+    mov ax, 0x7fff ; 32767 ;uint
     mov bx, 0xffff ; 65535 ;uint
 
 overflow:
