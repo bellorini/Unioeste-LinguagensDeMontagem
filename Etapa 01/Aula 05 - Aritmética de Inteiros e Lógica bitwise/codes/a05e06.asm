@@ -39,8 +39,8 @@ divisao0:
 divisao1:
       ; EAX <- dividendo1 = -100
       ; EDX:EAX <- EDX:EAX / divisor
-    mov  edx, -1 ; bytes altos
     mov  eax, [dividendo2] ; bytes baixos
+    cdq
     mov  ebx, [divisor1]   
     idiv ebx               ; também pode ser registrador
 
