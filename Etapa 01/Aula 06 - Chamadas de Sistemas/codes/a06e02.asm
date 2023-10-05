@@ -30,8 +30,9 @@ section .text
 
 _start:
     ; int open(const char *pathname, int flags, mode_t mode);
+    ; ué? onde estão os comentários assembly vs syscall?
     mov rax, 2          ; open file
-    lea rdi, [fileName] ; *pathname
+    lea edi, [fileName] ; *pathname
     mov esi, createopenr; flags
     mov edx, userWR     ; mode
     syscall
@@ -49,7 +50,7 @@ leitura:
 
 escrita:
     mov rax, 1   ; escrita em terminal
-    mov rdi, 1
+    mov edi, 1
     lea rsi, [texto]
     mov edx, [textoL]
     syscall
@@ -60,6 +61,7 @@ fecha:
     syscall
 
 fim:
+    ; void _exit(int status);
     mov rax, 60
-    mov rdi, 0
+    mov edi, 0
     syscall
